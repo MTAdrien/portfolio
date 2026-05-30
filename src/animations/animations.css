@@ -1,0 +1,21 @@
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(59,130,246,0.15);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 20px rgba(34,211,238,0.3);
+}
