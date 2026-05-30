@@ -1,0 +1,20 @@
+:root {
+    --background-dark: #01091b;
+    --background-secondary: #111827;
+    --background-card: #1e293b;
+
+    --text-light: #f8fafc;
+    --text-gray: #dee1cb;
+
+    --accent-blue: #3b82f6;
+    --accent-light: #f8fafc;
+    --accent-violet: #8b5cf6;
+
+    --border-color: rgba(255,255,255,0.08);
+
+    --transition: 0.3s ease;
+
+    --radius: 16px;
+
+    --container-width: 1200px;
+}

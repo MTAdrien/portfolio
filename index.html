@@ -10,11 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="src/css/variable.css">
+    <link rel="stylesheet" href="src/css/style.css">
   </head>
 
   <body>
     <header>
-      <div>
+    <div class="stars small-stars"></div>
+    <div class="stars medium-stars"></div>
+    <div class="stars large-stars"></div>
+      <div class="container nav-content">
         <h2 class="logo">MTAdrien</h2>
         <nav>
           <ul class="nav-links">
@@ -27,14 +33,14 @@
       </div>
     </header>
     <main>
-        <section>
-        <div>
-          <div>
-            <p>Développeur Web & IA</p>
+        <section class="hero section fade-section">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="hero-subtitle">Développeur Web & IA</p>
 
             <h1>Développeur Full Stack & AI Software Developer en formation</h1>
 
-            <p>
+            <p class="hero-description">
               Je développe des projets web modernes avec une approche orientée
               SaaS, automatisation et avec intégration d'intelligence artificielle pour certains. Je construis
               progressivement des solutions métiers adaptées aux besoins des entreprises.
@@ -45,109 +51,109 @@
             </div>
           </div>
 
-          <div>
-            <div>
+          <div class="hero-image">
+            <div class="avatar-container">
               <img src="src/assets/images/logo-adlitech-v2.png" alt="Logo" />
             </div>
           </div>
         
       </section>
 
-      <section>
-        <div>
-          <h2>Compétences</h2>
+      <section id="skills" class="skills section fade-section">
+        <div class="container">
+          <h2 class="section-title">Compétences</h2>
 
-          <div>
-            <div>
+          <div class="skills-grid">
+            <div class="skill-card">
               <h3>Frontend</h3>
-              <div>
-                <div>
+              <div class="badges">
+                <div class="badge">
                 <img src="src/assets/icons/html-5-logo.svg" alt="HTML logo">
                 <span>HTML</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/css3-logo.svg" alt="CSS logo">
                 <span>CSS</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/javascript.svg" alt="JavaScript logo">
                 <span>JavaScript</span>
                 </div>
               </div>
             </div>
 
-            <div>
+            <div class="skill-card">
               <h3>Backend</h3>
-              <div>
-                <div>
+              <div class="badges">
+                <div class="badge">
                 <img src="src/assets/icons/nodejs-logo.svg" alt="Node.js logo">
                 <span>Node.js</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/express-logo.svg" alt="Express logo">
                 <span>Express</span>
                 </div>
               </div>
             </div>
 
-            <div>
+            <div class="skill-card">
               <h3>Base de données</h3>
-              <div>
-                <div>
+              <div class="badges">
+                <div class="badge">
                 <img src="src/assets/icons/sql-logo.svg" alt="SQL logo">
                 <span>SQL</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/postgresql-logo.svg" alt="PostgreSQL logo">
                 <span>PostgreSQL</span>
                 </div>       
               </div>
             </div>
 
-            <div>
+            <div class="skill-card">
               <h3>Outils</h3>
-              <div>
-                <div>
+              <div class="badges">
+                <div class="badge">
                 <img src="src/assets/icons/git-logo.svg" alt="Git logo">
                 <span>Git</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/github-logo.svg" alt="GitHub logo">
                 <span>GitHub</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/vscode-logo.svg" alt="VS Code logo">
                 <span>VS Code</span>
                 </div>
               </div>
             </div>
 
-            <div>
+            <div class="skill-card">
               <h3>IA</h3>
-              <div>
-                <div>
+              <div class="badges">
+                <div class="badge">
                 <img src="src/assets/icons/openai-logo.svg" alt="OpenAI logo">
                 <span>OpenAI API</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/claude-logo.svg" alt="Claude IA logo">
                 <span>Claude IA</span>
                 </div>
               </div>
             </div>
 
-            <div>
+            <div class="skill-card">
               <h3>Déploiement</h3>
-              <div>
-                <div>
+              <div class="badges">
+                <div class="badge">
                 <img src="src/assets/icons/vercel-logo.svg" alt="Vercel logo">
                 <span>Vercel</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/neon-logo.svg" alt="Neon logo">
                 <span>Neon</span>
                 </div>
-                <div>
+                <div class="badge">
                 <img src="src/assets/icons/render-logo.svg" alt="Render logo">
                 <span>Render</span>
               </div>
@@ -156,14 +162,14 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Projets</h2>
+      <section id="projects" class="projects section fade-section">
+        <div class="container">
+          <h2 class="section-title">Projets</h2>
 
-          <div>
-            <article>
-              <div></div>
-              <div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image"></div>
+              <div class="project-content">
                 <h3>Portfolio développeur</h3>
 
                 <p>
@@ -172,27 +178,29 @@
                   et mon évolution vers le développement Full Stack et l'IA.
                 </p>
 
-                <div>
+                <div class="project-stack">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
                 </div>
 
-                <div>
+                <div class="project-links">
                   <a href="https://github.com/MTAdrien/portfolio">GitHub</a>
                   <a href="">Démo</a>
                 </div>
               </div>
             </article>
 
-            <article>
-              <div>
+            <article class="project-card">
+              <div class="project-image"></div>
+
+              <div class="project-content">
                 <h3>Tshaly Pressing V1</h3>
 
                 <p>
                   Tshaly Pressing est une application web Full Stack permettant à un pressing de gérer ses commandes en ligne avec une vrai logique de fonctionnement terrain.
                 </p>
-                <div>
+                <div class="project-stack">
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
@@ -203,17 +211,17 @@
                   <span>Render</span>
                 </div>
 
-                <div>
+                <div class="project-links">
                   <a href="">GitHub</a>
                   <a href="">Démo</a>
                 </div>
               </div>
             </article>
 
-            <article>
-              <div></div>
+            <article class="project-card">
+              <div class="project-image"></div>
 
-              <div>
+              <div class="project-content">
                 <h3>Mini assistant IA métier</h3>
 
                 <p>
@@ -221,12 +229,12 @@
                   simples pour aider un professionnel dans son activité.
                 </p>
 
-                <div>
+                <div class="project-stack">
                   <span>JavaScript</span>
                   <span>API IA</span>
                   <span>Node.js</span>
                 </div>
-                <div>
+                <div class="project-links">
                   <a href="#">GitHub</a>
                   <a href="#">Démo</a>
                 </div>
@@ -236,9 +244,9 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>À propos</h2>
+      <section id="about" class="about section fade-section">
+        <div class="container">
+          <h2 class="section-title">À propos</h2>
 
           <p>
             Actuellement en formation Concepteur Développeur d'Applications, je
@@ -266,9 +274,9 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Vision & Objectifs</h2>
+      <section class="vision section fade-section">
+        <div class="container">
+          <h2 class="section-title">Vision & Objectifs</h2>
 
           <p>
             Mon objectif est de développer des solutions SaaS modernes intégrant
@@ -290,9 +298,9 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Contact</h2>
+      <section id="contact" class="contact section fade-section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
 
           <form class="contact-form" method="post">
             <input type="text" placeholder="Nom" />
@@ -301,16 +309,16 @@
 
             <button type="submit" class="btn-primary">Envoyer</button>
           </form>
-          <div>
-            <div>
+          <div class="contact-links">
+            <div class="badge">
             <img src="src/assets/icons/github-logo.svg" alt="GitHub logo"/>
             <a href="https://github.com/MTAdrien">GitHub</a>
             </div>
-            <div>
+            <div class="badge">
             <img src="src/assets/icons/linkedin-logo.svg" alt="LinkedIn logo"/>
             <a href="https://www.linkedin.com/in/muyard-ta//">LinkedIn</a>
             </div>
-            <div>
+            <div class="badge">
             <img src="src/assets/icons/email-logo.svg" alt="Email logo"/>
             <a href="mailto:adlitech@outlook.com">Email</a>
             </div>
@@ -320,7 +328,7 @@
 
     </main>
     <footer class="footer">
-        <div>
+        <div class="container">
         <h3>Adrien Tayayi MUYARD</h3>
 
         <p>Construire des solutions intelligentes et utiles.</p>
