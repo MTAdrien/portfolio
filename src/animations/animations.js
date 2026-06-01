@@ -16,3 +16,11 @@ const observer = new IntersectionObserver((entries) => {
 fadeSections.forEach((section) => {
     observer.observe(section);
 });
+
+const pageLoader = document.getElementById('page-loader');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    pageLoader.classList.add('hidden');
+  }, 1200);
+});

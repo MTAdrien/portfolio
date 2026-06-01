@@ -20,3 +20,36 @@
 .btn-secondary:hover {
     box-shadow: 0 0 20px rgba(34,211,238,0.3);
 }
+
+#page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--background-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#page-loader img {
+  width: 130px;
+  animation: logoIntro 1.4s ease infinite alternate;
+}
+
+#page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes logoIntro {
+  from {
+    transform: scale(0.9) rotate(0deg);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: scale(1.08) rotate(180deg);
+    opacity: 1;
+  }
+}
